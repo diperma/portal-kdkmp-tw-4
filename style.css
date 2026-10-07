@@ -1,0 +1,210 @@
+:root {
+  --navy-950: #0b1f3f;
+  --navy-800: #12305e;
+  --navy-700: #1a3f78;
+  --navy-600: #24518f;
+  --ink: #16233a;
+  --ink-soft: #4a5872;
+  --paper: #f5f7fb;
+  --card: #ffffff;
+  --border: #dde3ee;
+  --border-strong: #c3ccdf;
+  --radius: 14px;
+  --max-width: 640px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--navy-950);
+  background-image:
+    linear-gradient(rgba(9, 23, 46, 0.55), rgba(9, 23, 46, 0.62)),
+    url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.masthead {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9fc0ee;
+}
+
+.masthead h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(6, 15, 31, 0.28);
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.12s ease;
+}
+
+.link-card:hover {
+  border-color: var(--navy-600);
+  background: #fbfcfe;
+}
+
+.link-card:active {
+  transform: scale(0.98);
+}
+
+.link-card:focus-visible {
+  outline: 2px solid var(--navy-700);
+  outline-offset: 2px;
+}
+
+.link-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--navy-950);
+  color: #ffffff;
+}
+
+.link-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.link-text {
+  flex: 1;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--navy-950);
+  line-height: 1.35;
+}
+
+.link-arrow {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--border-strong);
+  transition: transform 0.18s ease, color 0.18s ease;
+}
+
+.link-card:hover .link-arrow {
+  color: var(--navy-600);
+  transform: translateX(2px);
+}
+
+.link-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.site-footer {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (min-width: 640px) {
+  .page {
+    padding-top: 4rem;
+  }
+
+  .masthead h1 {
+    font-size: 2rem;
+  }
+
+  .link-card {
+    padding: 1.15rem 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-card,
+  .link-arrow {
+    transition: none;
+  }
+}
+
+/* TW 4: subjudul pada kartu tautan dan catatan akses */
+.link-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.link-sub {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.access-note {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.78);
+}
