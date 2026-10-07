@@ -202,7 +202,13 @@ body {
   line-height: 1.4;
 }
 
+/* hanya dua tautan: catatan akses langsung di bawah daftar, footer tetap di bawah halaman */
+.link-list {
+  flex: none;
+}
+
 .access-note {
+  flex: 1;
   margin: 1.25rem 0 0;
   text-align: center;
   font-size: 0.82rem;
