@@ -8,7 +8,7 @@ Portal tautan statis ("linktree-style") untuk pengawasan PHTC APP KDKMP Triwulan
 Halaman statis tunggal yang menjadi titik masuk berisi daftar Kategori sebagai tombol tautan.
 
 **Kategori**:
-Satu tombol di Portal yang mengarah ke satu tujuan. Di TW 4 Kategori awal adalah dua aplikasi web: "Lokus Uji Petik KDKMP" dan "Populasi KDKMP (BNBA)". Folder Google Drive TW 4 dapat ditambahkan sebagai Kategori berikutnya.
+Satu tombol di Portal yang mengarah ke satu tujuan. Portal TW 4 punya dua kelompok Kategori. Kelompok "Dokumen Pengawasan" berisi enam folder Google Drive di bawah folder induk "TW IV 2026": Panduan Teknis Pengawasan, Format Kertas Kerja, Rekaman Diseminasi, Unggah Kertas Kerja, Monitoring KKE, dan Laporan Evaluasi Perwakilan. Kelompok "Data dan Lokus Uji Petik" berisi dua aplikasi web: Lokus Uji Petik KDKMP dan Populasi KDKMP (BNBA).
 
 **Tautan Keluar**:
 Aksi klik pada Kategori yang membuka tujuannya di tab baru.

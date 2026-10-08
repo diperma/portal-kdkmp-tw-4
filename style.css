@@ -214,3 +214,17 @@ body {
   font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.78);
 }
+
+/* TW 4: pengelompokan tautan (dokumen Drive dan aplikasi data) */
+.link-group + .link-group {
+  margin-top: 1.75rem;
+}
+
+.group-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9fc0ee;
+}
