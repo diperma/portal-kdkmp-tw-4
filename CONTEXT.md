@@ -13,5 +13,8 @@ Satu tombol di Portal yang mengarah ke satu tujuan. Portal TW 4 punya dua kelomp
 **Tautan Keluar**:
 Aksi klik pada Kategori yang membuka tujuannya di tab baru.
 
+**Monitoring Kontributor Pusat**:
+Kategori pada kelompok Dokumen Pengawasan, tepat setelah Monitoring KKE. Membuka `monitoring-kontributor-pusat/` di tab baru. Halaman ini mengikuti pola Monitoring KKE Perwakilan: embed Google Sheets layar penuh pada desktop, tombol aplikasi/browser pada perangkat seluler, dan `?buka` untuk membuka spreadsheet langsung. Sumber spreadsheet: `1VgJ-oYx3ziQOEhNHwT-OGvTv6cKy03YcpJrD-TJwCA0`, tab `1831604320`. Hak akses tetap dikelola di Google Sheets; portal tidak mengubah izin atau menyalin data.
+
 **TW 4**:
 Periode Triwulan 4 yang menjadi cakupan waktu seluruh Kategori di Portal ini.
