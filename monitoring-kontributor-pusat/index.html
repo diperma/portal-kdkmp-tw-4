@@ -3,68 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monitoring Kontributor Pusat KDKMP TW IV 2026</title>
 <meta name="robots" content="noindex">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312305e'/%3E%3Cpath d='M14 40l10-12 8 8 16-18' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 50h36' stroke='%23d6363e' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<style>
-  html, body { margin: 0; height: 100%; }
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #f5f7fb; color: #16233a; display: flex; flex-direction: column; }
-  iframe { flex: 1; width: 100%; border: 0; background: #fff; }
-  .box { margin: auto; width: 100%; max-width: 380px; padding: 24px 20px; box-sizing: border-box; text-align: center; }
-  .logo { width: 56px; height: 56px; margin: 0 auto 14px; }
-  h1 { font-size: 1.2rem; margin: 0 0 6px; color: #0b1f3f; }
-  p { margin: 0 0 18px; font-size: .92rem; line-height: 1.5; color: #4a5872; }
-  .btn { display: block; padding: 14px 16px; border-radius: 12px; font-weight: 600; font-size: 1rem; text-decoration: none; }
-  .btn-app { background: #188038; color: #fff; }
-  .btn-web { margin-top: 12px; color: #12305e; background: #fff; border: 1px solid #dde3ee; font-size: .92rem; }
-  .note { margin-top: 18px; font-size: .8rem; color: #6b778c; }
-</style>
+<title>Monitoring Kontributor Pusat — Alamat Baru</title>
+<link rel="canonical" href="https://diperma.github.io/monitoring-kontributor-pusat/">
+<script>
+  window.location.replace("https://diperma.github.io/monitoring-kontributor-pusat/" + window.location.search + window.location.hash);
+</script>
 </head>
 <body>
-  <div class="box" id="msg">
-    <p>Membuka Monitoring Kontributor Pusat KDKMP TW IV 2026...</p>
-    <p>Jika tidak otomatis terbuka, <a id="direct" href="#">klik di sini</a>.</p>
-  </div>
-<script>
-  // Sheet Monitoring Kontributor Pusat TW IV 2026 (akses akun @bpkp.go.id)
-  var ID = "1VgJ-oYx3ziQOEhNHwT-OGvTv6cKy03YcpJrD-TJwCA0", GID = "1831604320";
-  var SHEET = "https://docs.google.com/spreadsheets/d/" + ID + "/edit?gid=" + GID + "#gid=" + GID;
-  var ua = navigator.userAgent;
-  var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-  var mobile = android || ios || /Mobile/i.test(ua) || window.innerWidth < 760;
-  document.getElementById("direct").href = SHEET;
-
-  if (/[?&]buka\b/.test(location.search)) {
-    window.location.replace(SHEET);                       // paksa buka langsung di Google Sheets (web)
-  } else if (mobile) {
-    // HP: arahkan ke aplikasi Google Sheets, bukan tampilan web (htmlview).
-    // Android: intent ke paket aplikasi Sheets; bila belum terpasang, jatuh ke versi web.
-    // iOS: universal link docs.google.com membuka aplikasi Sheets saat tombol diketuk.
-    var appUrl = android
-      ? "intent://docs.google.com/spreadsheets/d/" + ID + "/edit?gid=" + GID +
-        "#Intent;scheme=https;package=com.google.android.apps.docs.editors.sheets;S.browser_fallback_url=" +
-        encodeURIComponent(SHEET) + ";end"
-      : SHEET;
-    document.getElementById("msg").innerHTML =
-      '<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#12305e"/>' +
-      '<path d="M14 40l10-12 8 8 16-18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>' +
-      '<path d="M14 50h36" stroke="#d6363e" stroke-width="5" stroke-linecap="round"/></svg>' +
-      '<h1>Monitoring Kontributor Pusat KDKMP TW IV 2026</h1>' +
-      '<p>Buka dengan aplikasi Google Sheets agar dapat mengisi monitoring dengan nyaman.</p>' +
-      '<a class="btn btn-app" id="app" href="' + appUrl + '">Buka di aplikasi Google Sheets</a>' +
-      '<a class="btn btn-web" href="' + SHEET + '" target="_blank" rel="noopener">Buka di browser</a>' +
-      '<p class="note">Gunakan akun Google BPKP (@bpkp.go.id). Belum punya aplikasinya? Pasang Google Sheets dari Play Store / App Store.</p>';
-    if (android) setTimeout(function () { window.location.href = appUrl; }, 150);   // coba buka aplikasi otomatis
-  } else {
-    // Laptop/PC: tampilkan sheet satu layar penuh agar alamat diperma.github.io tetap terlihat.
-    document.getElementById("msg").remove();
-    var fr = document.createElement("iframe");
-    fr.src = SHEET;
-    fr.title = "Monitoring Kontributor Pusat KDKMP TW IV 2026";
-    fr.setAttribute("allow", "clipboard-read; clipboard-write");
-    document.body.appendChild(fr);
-  }
-</script>
-<noscript><p style="text-align:center">Buka <a href="https://docs.google.com/spreadsheets/d/1VgJ-oYx3ziQOEhNHwT-OGvTv6cKy03YcpJrD-TJwCA0/edit?gid=1831604320#gid=1831604320">Monitoring Kontributor Pusat KDKMP TW IV 2026</a>.</p></noscript>
+<p>Monitoring Kontributor Pusat telah pindah ke <a href="https://diperma.github.io/monitoring-kontributor-pusat/">alamat baru</a>.</p>
 </body>
 </html>
